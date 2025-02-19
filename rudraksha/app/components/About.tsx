@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import "./About.css";
 
 const images = ["/guru.png", "/guru2.png", "/guru3.png"];
@@ -104,7 +105,7 @@ const ImageCarousel = ({ images }: { images: string[] }) => {
       transition={{ duration: 0.8 }}
       className="w-full flex justify-center"
     >
-      <img
+      <Image 
         src={images[index]}
         alt="Scrolling Image"
         className="rounded-lg shadow-lg object-cover"

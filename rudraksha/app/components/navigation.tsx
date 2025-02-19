@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -26,7 +26,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex flex-row">
-            <img src="/logo.jpg" alt="logo" width={30} height={30} />
+            <Image src="/logo.jpg" alt="logo" width={30} height={30} />
             <Link href="/" className="text-2xl text-white self-end ml-3">
               Rudraksha Seva
             </Link>

@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { motion } from "framer-motion";
 import './About.css'
 const services = [
@@ -46,7 +46,7 @@ export default function Services() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, delay: index * 0.3 }}
           >
-            <img
+            <Image
               src={service.image}
               alt={service.title}
               className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-lg shadow-md"

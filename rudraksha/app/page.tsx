@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import About from "./components/About";
 import Services from "./components/Services";
 import YouTubeShowcase from "./components/YouTubeShowcase";

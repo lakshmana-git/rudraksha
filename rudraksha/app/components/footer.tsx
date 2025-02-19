@@ -1,6 +1,7 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaFacebook, FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import './About.css'
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left - About */}
         <div>
-        <img src="/logo.jpg" alt='logo' width={100} height={100} />
+        <Image src="/logo.jpg" alt='logo' width={100} height={100} />
           <p className="mt-3 text-gray-400">
             We provide expert services in <b>Rudraksha, Astrology, Vastu,</b> and <b>Gemstone Examination</b>. Our mission is to guide individuals toward spiritual and material well-being.
           </p>
